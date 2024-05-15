@@ -5,7 +5,7 @@
   "bin": "dist/index.js",
   "scripts": {
     "launch": "node dist/launch.js && pm2 start pm2.json",
-    "start": "tsup && node dist/index.js",
+    "start": "node manager",
     "build": "tsup",
     "pack": "npm run build && pkg . --out-path build --targets node16-win-x64,node16-macos-x64,node16-linux-x64 --public --sourceType module"
   },
